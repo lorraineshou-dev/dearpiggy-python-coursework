@@ -1,0 +1,146 @@
+/* Artwork registration copied from the existing Dear Piggy illustration system. */
+.avatar{position:relative;width:100%;aspect-ratio:1;isolation:isolate;overflow:visible}
+.pig-figure{position:absolute;z-index:2;transform-origin:50% 85%}
+.mount-sprite{position:absolute;left:0;width:100%;background-size:400% 100%;background-repeat:no-repeat;z-index:1;pointer-events:none}
+.mount-front{z-index:3;pointer-events:none}
+.pig-contact-shadow{position:absolute;border-radius:50%;z-index:1;filter:blur(4px)}
+.head-accessory{position:absolute;background-size:200% 100%;background-repeat:no-repeat;pointer-events:none}
+.strawhat{background-position:0 0}
+.companion{position:absolute;z-index:4;background-size:300% 100%;background-repeat:no-repeat;pointer-events:none}
+.companion[data-pet=corgi]{background-position:100% 0}
+.companion[data-pet=poodle],.companion[data-pet=rabbit]{background-size:100% 100%;background-position:center}
+[data-scene=beach],[data-scene=lab],[data-scene=classroom]{background-size:300% 100%;background-repeat:no-repeat;background-position:0 0}
+[data-scene=lab]{background-position:50% 0}[data-scene=classroom]{background-position:100% 0}
+[data-scene=cinema]{background-size:cover;background-position:center;background-repeat:no-repeat}
+.avatar.with-scene{border-radius:14px;overflow:hidden}
+.avatar[data-seat=blanket] .mount-sprite{background-size:377.083333% 100%;background-position:.313283% 0!important;height:125.694444%}
+.avatar[data-seat=sofa] .mount-sprite{background-size:386.476868% 100%;background-position:35.652174% 0!important;height:128.825623%}
+.avatar[data-seat=ring] .mount-sprite{background-size:374.482759% 100%;background-position:70.979899% 0!important;height:124.827586%}
+.avatar[data-seat=chair] .mount-sprite{background-size:517.142857% 100%;background-position:98.744292% 0!important;top:-17.5%;height:133.333333%}
+.reference-avatar{filter:none;overflow:visible}
+.reference-avatar .pig-figure,.reference-avatar[data-seat=blanket] .pig-figure{left:4%;top:0;width:92%;height:92%;filter:drop-shadow(0 4px 3px #7049471c)}
+.reference-avatar .reference-pig-image,.reference-avatar .reference-face,.reference-avatar .reference-pig-patches,.reference-avatar .reference-garment{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;pointer-events:none}
+.reference-avatar .reference-face{clip-path:polygon(0 0,100% 0,100% 44%,83% 48%,74% 51%,57% 54%,42% 52%,31% 45%,0 42%)}
+.reference-avatar[data-skin=black] .reference-pig-image,.reference-avatar[data-skin=black] .reference-face{filter:grayscale(.9) brightness(.38) contrast(1.25)}
+.reference-avatar[data-skin=brown] .reference-pig-image,.reference-avatar[data-skin=brown] .reference-face{filter:sepia(.65) saturate(1.35) brightness(.73)}
+.reference-avatar .reference-pig-patches{filter:sepia(.8) saturate(.6) brightness(.48);mask-image:radial-gradient(ellipse 18% 19% at 34% 28%,#000 78%,transparent 100%),radial-gradient(ellipse 18% 25% at 77% 72%,#000 77%,transparent 100%)}
+.reference-avatar .mount-sprite{top:22%;height:90%}
+.reference-avatar[data-seat=blanket] .mount-sprite{top:37%;height:78%;opacity:.85}
+.reference-avatar[data-seat=blanket] .mount-front{display:none}
+.reference-avatar .pig-contact-shadow,.reference-avatar[data-seat=blanket] .pig-contact-shadow{top:82%;left:26%;width:50%;height:6%;background:#6a484a30}
+.reference-avatar[data-seat=sofa] .pig-figure{left:13%;top:-5%;width:74%;height:74%}
+.reference-avatar[data-seat=sofa] .mount-sprite{top:2%;height:105%}
+.reference-avatar[data-seat=sofa] .mount-front{clip-path:polygon(0 40%,18% 40%,25% 65%,75% 65%,82% 40%,100% 40%,100% 100%,0 100%)}
+.reference-avatar[data-seat=ring] .pig-figure{left:9%;top:-1%;width:82%;height:82%}
+.reference-avatar[data-seat=ring] .mount-sprite{top:21%;height:90%}
+.reference-avatar[data-seat=ring] .mount-front{clip-path:inset(61% 0 0)}
+.reference-avatar[data-seat=chair] .pig-figure{left:13%;top:-5%;width:74%;height:74%}
+.reference-avatar[data-seat=chair] .mount-sprite{top:-4%;height:115%}
+.reference-avatar[data-seat=chair] .mount-front{clip-path:inset(69% 0 0)}
+.reference-avatar .pig-figure>img[src*="glasses"]{transform:translate(6%,-1%) scale(.91);transform-origin:50% 29%}
+.reference-avatar .pig-figure>img[src*="bow"]{transform:translate(3%,-2%) scale(.82);transform-origin:70% 18%}
+.reference-avatar .pig-figure>img[src*="earbuds"]{transform:translate(13%,4%) scale(.84);transform-origin:50% 20%}
+.reference-avatar .strawhat{left:18%;top:-23%;width:73%;height:73%;transform:rotate(-12deg)}
+.reference-avatar .headphones{left:20%;top:-8%;width:70%;height:39%;transform:rotate(-15deg)}
+.reference-avatar .companion{left:69%;top:52%;width:40%;height:40%;z-index:4}
+.reference-avatar .companion[data-pet=poodle]{left:66%;top:45%;width:46%;height:46%}
+.reference-avatar .companion[data-pet=rabbit]{left:70%;top:58%;width:34%;height:34%}
+.reference-avatar[data-skin=tricolor] .reference-pig-image,.reference-avatar[data-skin=tricolor] .reference-face:not(.reference-pig-patches){filter:saturate(.5) brightness(1.035)}
+.reference-avatar .reference-pig-patches{filter:grayscale(.85) brightness(.35);mask-image:radial-gradient(ellipse 18% 19% at 34% 28%,#000 78%,transparent 100%)}
+.reference-avatar .reference-pig-patches-brown{filter:sepia(.9) saturate(1.3) brightness(.65);mask-image:radial-gradient(ellipse 18% 25% at 77% 72%,#000 77%,transparent 100%)}
+
+.reference-avatar .pig-figure[data-garment]:not([data-garment=""])>.reference-pig-image{visibility:hidden}
+.reference-avatar .fitted-pig,.reference-avatar .fitted-fabric{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;pointer-events:none}
+.reference-avatar .fitted-fabric{mask-size:contain;mask-repeat:no-repeat;mask-position:center}
+.reference-avatar .reference-face{clip-path:none;mask-image:linear-gradient(#000 0 35%,#000 38%,transparent 46%)}
+.reference-avatar[data-skin=black] .fitted-pig{filter:grayscale(.9) brightness(.38) contrast(1.25)}
+.reference-avatar[data-skin=brown] .fitted-pig{filter:sepia(.65) saturate(1.35) brightness(.73)}
+.reference-avatar[data-skin=tricolor] .fitted-pig{filter:saturate(.5) brightness(1.035)}
+.reference-avatar .reference-face.reference-pig-patches{mask-image:radial-gradient(ellipse 18% 19% at 34% 28%,#000 68%,transparent 100%)}
+.reference-avatar .pig-figure>.accessory{filter:drop-shadow(0 1px 1px #66483b25)}
+.reference-avatar .pig-figure>img[src*="glasses"]{transform:translate(6%,-1%) scale(.88);transform-origin:50% 29%;filter:drop-shadow(0 1px .6px #5e403323)}
+.reference-avatar .pig-figure>img[src*="bow"]{transform:translate(3.5%,-.2%) scale(.68);transform-origin:70% 18%;filter:saturate(.8) drop-shadow(0 1px 1px #6e4d3929)}
+.reference-avatar .strawhat{left:27%;top:-24%;width:54%;height:54%;transform:rotate(-8deg);filter:saturate(.66) brightness(1.05) drop-shadow(0 2px 1px #76593b26)}
+.reference-avatar .headphones{left:20%;top:-4%;width:71%;height:38%;transform:rotate(-15deg);filter:brightness(1.12) drop-shadow(0 1px 1px #513b3b28)}
+.reference-avatar .mount-sprite{filter:saturate(.78) brightness(1.025)}
+.reference-avatar[data-seat=blanket] .mount-sprite{opacity:1;filter:saturate(.62) brightness(1.025)}
+.reference-avatar .pig-contact-shadow{filter:blur(4px);background:#684c4138}
+.reference-avatar[data-skin=black] .reference-pig-image,.reference-avatar[data-skin=black] .reference-face,.reference-avatar[data-skin=black] .fitted-pig{filter:grayscale(.9) brightness(.48) contrast(1.08)}
+.reference-avatar .reference-face-details{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;pointer-events:none;mask-image:radial-gradient(ellipse 7% 4.8% at 64.2% 34.4%,#000 76%,transparent 100%),radial-gradient(ellipse 2% 2.9% at 47.1% 28.7%,#000 65%,transparent 100%),radial-gradient(ellipse 1.8% 2.7% at 70.4% 23.3%,#000 65%,transparent 100%)}
+.reference-avatar .reference-face:not(.reference-pig-patches){mask-image:radial-gradient(ellipse 25% 21% at 59% 28%,#000 68%,transparent 100%)}
+/* One approved watercolor / colored-pencil direction across the game's art. */
+.reference-avatar .mount-sprite,
+.reference-avatar[data-seat=chair] .mount-sprite{background-image:url('assets/handdrawn/seats.png');filter:none}
+.reference-avatar .head-accessory{background-image:url('assets/handdrawn/headwear.png')}
+[data-scene=beach],[data-scene=lab],[data-scene=classroom]{background-image:url('assets/handdrawn/backgrounds.png')}
+[data-scene=cinema]{background-image:url('assets/handdrawn/cinema.png')}
+.reference-avatar .companion{background-image:url('assets/handdrawn/pets.png');filter:drop-shadow(0 3px 2px #83695126)}
+.reference-avatar .companion[data-pet=poodle]{background-image:url('assets/handdrawn/poodle.png')}
+.reference-avatar .companion[data-pet=rabbit]{background-image:url('assets/handdrawn/rabbit.png')}
+/* Glass centers are registered to the tilted drawn face, not the former 3D mesh. */
+.reference-avatar .pig-figure>img[src*="glasses"]{transform:translate(7.4%,-1.2%) scale(1.02);transform-origin:50% 29%;filter:drop-shadow(0 1px .5px #70513a26)}
+.reference-avatar .pig-figure>img[src*="bow"]{transform:translate(7.5%,-3%) scale(.72);transform-origin:70% 18%;filter:drop-shadow(0 1px .7px #79573d25)}
+.reference-avatar .strawhat{left:26%;top:-21%;width:56%;height:56%;transform:rotate(-8deg);filter:drop-shadow(0 2px 1px #77573923)}
+.reference-avatar .headphones{left:12%;top:1%;width:88%;height:42%;transform:rotate(-18deg);clip-path:polygon(6% 0,100% 0,100% 100%,0 100%,0 56%,6% 56%);filter:drop-shadow(0 1px 1px #68534422)}
+.reference-avatar .pig-figure>img[src*="earbuds"]{transform:translate(15%,6%) scale(.87);transform-origin:50% 20%}
+.reference-avatar .reference-face:not(.reference-pig-patches){mask-image:radial-gradient(ellipse 25% 22% at 60% 30%,#000 68%,transparent 100%)}
+.reference-avatar .reference-face-details{mask-image:radial-gradient(ellipse 7% 4.9% at 65.7% 35.7%,#000 76%,transparent 100%),radial-gradient(ellipse 2% 2.9% at 48.5% 31.5%,#000 65%,transparent 100%),radial-gradient(ellipse 1.8% 2.7% at 71.4% 24.2%,#000 65%,transparent 100%)}
+.reference-avatar[data-skin=black] .reference-pig-image,.reference-avatar[data-skin=black] .reference-face,.reference-avatar[data-skin=black] .fitted-pig{filter:grayscale(.9) brightness(.53) contrast(1.02)}
+.room[data-scene=room]{background:radial-gradient(ellipse at 48% 30%,#fffaf0,#f4e9df)}
+.dressing-room[data-scene=room]{background:radial-gradient(ellipse at 50% 35%,#fffaf0,#eee6f0)}
+.chat-pig-stage{background:radial-gradient(ellipse at 50% 30%,#fffaf0,#eee7ef)}
+.room .window{border-color:#d7c6ae;border-radius:40% 45% 4% 3%;box-shadow:1px 1px 0 #b8a68e40}
+.room .wall-print{border-color:#d8c7af;background:#fff9eb;color:#9d8c77}
+.room .floor{background:linear-gradient(#eee0d1,#e9dccd)}
+.room-chip,.speech{color:#8c796b}.room .speech{background:#fffaf1ed}
+/* V3.1: a shared head/foreleg rig carries accessories and fabric with each pose. */
+.reference-avatar .pig-body{mask:url('assets/handdrawn/body-seam-mask-v31.svg') center/contain no-repeat}
+.reference-avatar .pig-head{transform-origin:58% 47%;transition:transform .7s ease}
+.reference-avatar .pig-head>.reference-pig-image,.reference-avatar .pig-head>.reference-pig-patches{mask:url('assets/handdrawn/head-fitted-mask-v31.svg') center/contain no-repeat}
+.reference-avatar .pig-head>.reference-pig-patches{mask-image:radial-gradient(ellipse 18% 19% at 34% 28%,#000 68%,transparent 100%)}
+.reference-avatar .pig-body>.reference-pig-image{visibility:visible}
+.reference-avatar .pig-figure[data-garment]:not([data-garment=""])>.pig-body>.reference-pig-image{visibility:hidden}
+.reference-avatar .pig-head>.accessory{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 1px .6px #74544122)}
+.reference-avatar .pig-head>img[src*="glasses"]{transform:translate(7.4%,-1.2%) scale(1.02);transform-origin:50% 29%}
+.reference-avatar .pig-head>img[src*="bow"]{transform:translate(7.5%,-3%) scale(.72);transform-origin:70% 18%}
+.reference-avatar .pig-head>img[src*="earbuds"],.reference-avatar .pig-head>.fitted-headphones{transform:none}
+/* The brim sits on the crown, above the eyes; no bow on the hat. */
+.reference-avatar .strawhat{left:27%;top:-20%;width:60%;height:53%;transform:rotate(-8deg)}
+.reference-avatar .sleeping-expression{opacity:0}
+.reference-avatar[data-pose=sleep] .pig-head>.sleeping-expression{opacity:1}
+.reference-avatar[data-pose=sleep] .pig-head>.reference-pig-image:not(.sleeping-expression),.reference-avatar[data-pose=sleep] .pig-head>.reference-face-details:not(.sleeping-expression),.reference-avatar[data-pose=sleep] .pig-head>.reference-pig-patches:not(.sleeping-expression){opacity:0}
+.reference-avatar[data-pose=listen] .pig-head{transform:rotate(9deg) translateY(1%)}
+.reference-avatar[data-pose=sleep] .pig-head{transform:rotate(5deg) translateY(2%)}
+.reference-avatar[data-pose=sleep] .pig-figure{transform:scaleY(.96);transform-origin:50% 95%}
+.reference-avatar:is(#home-avatar,#shop-avatar,#chat-avatar)[data-pose=happy] .pig-head{animation:happy-nod 4.5s ease-in-out infinite}
+.reference-avatar[data-pose=wave] .pig-head{transform:rotate(-3deg)}
+.pig-pose-controls{display:flex;gap:7px;justify-content:center;flex-wrap:wrap;margin:12px 0 20px}
+.pig-pose-controls button{border:1px solid #e4d9e7;background:#fffaf6;color:#80718e;border-radius:18px;padding:8px 13px;font:inherit;font-size:12px;cursor:pointer;min-height:36px}
+.pig-pose-controls button:hover,.pig-pose-controls button:focus-visible{background:#eee5f4;outline:2px solid #baa7cd;outline-offset:2px}
+@keyframes happy-nod{0%,100%{transform:rotate(0)}50%{transform:rotate(-2deg) translateY(-.7%)}}
+
+.reference-avatar .pig-body,.reference-avatar .pig-head,.reference-avatar .pig-wave-body{position:absolute;inset:0;pointer-events:none}
+.reference-avatar .pig-wave-body{display:none;mask:url('assets/handdrawn/body-seam-mask-v31.svg') center/contain no-repeat}
+.reference-avatar[data-pose=wave] .pig-body{display:none}
+.reference-avatar[data-pose=wave] .pig-wave-body{display:block}
+@media(prefers-reduced-motion:reduce){.reference-avatar .pig-head{animation:none!important;transition:none!important}}
+
+.reference-avatar .pig-head>.accessory.fitted-headphones{transform:none}
+.reference-avatar[data-pose=sleep]::after{content:'z z';position:absolute;top:10%;right:5%;color:#a195ae;font:italic 17px Georgia;letter-spacing:4px}
+@media(prefers-reduced-motion:reduce){.reference-avatar .pig-head{animation:none!important;transition:none!important}}
+
+/* Fixed catalogue masks keep garment color independent of fur, without inline styles. */
+.pig-figure[data-garment=coat] .pig-body .fitted-fabric{mask-image:url(assets/handdrawn/coat-mask.svg)}
+.pig-figure[data-garment=coat] .pig-wave-body .fitted-fabric{mask-image:url(assets/handdrawn/coat-wave-mask.svg)}
+.pig-figure[data-garment=knit] .pig-body .fitted-fabric{mask-image:url(assets/handdrawn/knit-mask.svg)}
+.pig-figure[data-garment=knit] .pig-wave-body .fitted-fabric{mask-image:url(assets/handdrawn/knit-wave-mask.svg)}
+.pig-figure[data-garment=brown-blazer] .pig-body .fitted-fabric{mask-image:url(assets/handdrawn/brown-blazer-mask.svg)}
+.pig-figure[data-garment=brown-blazer] .pig-wave-body .fitted-fabric{mask-image:url(assets/handdrawn/brown-blazer-wave-mask.svg)}
+.pig-figure[data-garment=black-jacket] .pig-body .fitted-fabric{mask-image:url(assets/handdrawn/black-jacket-mask.svg)}
+.pig-figure[data-garment=black-jacket] .pig-wave-body .fitted-fabric{mask-image:url(assets/handdrawn/black-jacket-wave-mask.svg)}
+.pig-figure[data-garment=overalls] .pig-body .fitted-fabric{mask-image:url(assets/handdrawn/overalls-mask.svg)}
+.pig-figure[data-garment=overalls] .pig-wave-body .fitted-fabric{mask-image:url(assets/handdrawn/overalls-wave-mask.svg)}
+.pig-figure[data-garment=gray-shirt] .pig-body .fitted-fabric{mask-image:url(assets/handdrawn/gray-shirt-mask.svg)}
+.pig-figure[data-garment=gray-shirt] .pig-wave-body .fitted-fabric{mask-image:url(assets/handdrawn/gray-shirt-wave-mask.svg)}
+.pig-figure[data-garment=hoodie] .pig-body .fitted-fabric{mask-image:url(assets/handdrawn/hoodie-mask.svg)}
+.pig-figure[data-garment=hoodie] .pig-wave-body .fitted-fabric{mask-image:url(assets/handdrawn/hoodie-wave-mask.svg)}

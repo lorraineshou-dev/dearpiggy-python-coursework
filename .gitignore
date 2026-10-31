@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.env.local
+data/
+marking-data/
+dist/
+*.sqlite3*
+/IMPLEMENTATION_CONTRACT.txt

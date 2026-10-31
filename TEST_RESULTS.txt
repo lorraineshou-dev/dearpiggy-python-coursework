@@ -1,0 +1,52 @@
+DEAR PIGGY - VERIFICATION RECORD
+================================
+
+Date: 2026-11-01 (Australia/Sydney)
+Environment: macOS, Python 3.12.14 and the system Python 3.9.6,
+SQLite from each Python interpreter's standard library.
+No third-party Python packages were installed or required.
+
+Automated command (from the folder containing main.py):
+    python3 -m unittest discover -s tests -v
+
+Result: all 51 tests passed on both Python 3.12.14 and Python 3.9.6.
+    test_game.py:  21 tests (rules, storage, photos, transaction concurrency)
+    test_http.py:  13 tests (routes, sessions, persistence, input handling)
+    test_ai.py:    10 tests (mock API transport and memory-only conversation)
+    test_views.py:  7 tests (bilingual HTML, artwork, escaping, previews)
+
+Important checks include the six-reward daily cap, duplicate-completion
+prevention across remove/restore and clock rollback, catalogue-priced
+purchases, independent equipment slots, consumable colour cards, validated
+photo formats, separate browser profiles, atomic writes, and saved progress
+surviving server restart. HTTP tests bind temporary loopback ports only.
+
+Browser checks in the Codex in-app browser:
+- Welcome page and English/Chinese switching.
+- Entering the app, completing an act, and the disabled completion control.
+- Adding a custom act and displaying its saved record.
+- Saving a diary note, choosing a local PNG, browser resizing, and displaying
+  the resulting saved diary photo.
+- Mobile layouts without horizontal overflow; fitted outfit/seat/pet artwork,
+  wardrobe previews, breathing countdown, and cloud-to-rainbow animation.
+
+Clean archive check:
+- Extracted the submission ZIP into a new temporary folder.
+- Verified all 75 source/asset checksums against MANIFEST.json.
+- Re-ran all 51 tests from the extracted folder: passed.
+- Launched the extracted main.py on an alternate local port with a fresh data
+  folder and no API configuration. Welcome page, CSS, JavaScript, pig artwork,
+  local music and font HTTP requests succeeded. Stopped that test server.
+
+Limits of this verification:
+- OpenAI tests use mocks and intentionally make no external API calls. No
+  real API key is shipped. Live model availability/quota is not tested here.
+- Audio controls/assets are present; audible output on a tutor's hardware
+  and browser autoplay policy must be checked locally.
+- Windows, Linux, and Ed were not exercised. The code uses standard-library
+  Python; the full browser application needs a local browser/server setup.
+- This record documents functional checks, not a guarantee of course marks.
+
+The submission excludes runtime databases, personal journal entries, API keys,
+GitHub tokens, and cloud deployment settings. MANIFEST.json records every
+included source/asset file's byte length and SHA-256 checksum.

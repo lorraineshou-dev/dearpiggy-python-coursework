@@ -1,0 +1,688 @@
+{
+  "habits": [
+    {
+      "id": "water",
+      "zh": "喝一杯水",
+      "en": "Drink a glass of water",
+      "sub": [
+        "给身体一点滋养",
+        "A little nourishment for your body"
+      ],
+      "icon": "💧",
+      "category": "body",
+      "minutes": 1
+    },
+    {
+      "id": "breathe",
+      "zh": "慢慢呼吸一分钟",
+      "en": "Breathe gently for a minute",
+      "sub": [
+        "给忙碌的心一个停顿",
+        "Give your busy mind a pause"
+      ],
+      "icon": "🌬",
+      "category": "mind",
+      "minutes": 1
+    },
+    {
+      "id": "kind",
+      "zh": "对自己说一句温柔的话",
+      "en": "Say something kind to yourself",
+      "sub": [
+        "比如：今天这样，也已经很好",
+        "Try: what I can do today is enough"
+      ],
+      "icon": "☀",
+      "category": "mind",
+      "minutes": 1
+    },
+    {
+      "id": "stretch",
+      "zh": "轻轻伸展一下肩膀",
+      "en": "Gently stretch your shoulders",
+      "sub": [
+        "只做让身体舒服的动作",
+        "Only move in ways that feel comfortable"
+      ],
+      "icon": "🌿",
+      "category": "body",
+      "minutes": 2
+    },
+    {
+      "id": "meal",
+      "zh": "坐下来，认真吃一餐",
+      "en": "Sit down and enjoy a meal",
+      "sub": [
+        "让吃饭成为照顾自己的时间",
+        "Make a little space to nourish yourself"
+      ],
+      "icon": "🍲",
+      "category": "body",
+      "minutes": 10
+    },
+    {
+      "id": "daylight",
+      "zh": "到窗边看看天空",
+      "en": "Look at the sky by a window",
+      "sub": [
+        "给自己一个小小的换气时刻",
+        "A small change of scene"
+      ],
+      "icon": "☁",
+      "category": "body",
+      "minutes": 1
+    },
+    {
+      "id": "screen",
+      "zh": "睡前放下手机五分钟",
+      "en": "Put your phone down before bed",
+      "sub": [
+        "留五分钟，慢慢安静下来",
+        "Five minutes to wind down"
+      ],
+      "icon": "☾",
+      "category": "rest",
+      "minutes": 5
+    },
+    {
+      "id": "rest",
+      "zh": "允许自己安静休息两分钟",
+      "en": "Give yourself two quiet minutes",
+      "sub": [
+        "不用把休息变成另一项任务",
+        "You don’t have to earn your rest"
+      ],
+      "icon": "🫖",
+      "category": "rest",
+      "minutes": 2
+    },
+    {
+      "id": "connect",
+      "zh": "向信任的人问声好",
+      "en": "Say hello to someone you trust",
+      "sub": [
+        "一句简单的问候就可以",
+        "A simple hello is enough"
+      ],
+      "icon": "💌",
+      "category": "connection",
+      "minutes": 2
+    },
+    {
+      "id": "good",
+      "zh": "记下一件今天的小确幸",
+      "en": "Notice one little good thing",
+      "sub": [
+        "再小的事，也可以被记住",
+        "Even something tiny is worth keeping"
+      ],
+      "icon": "✧",
+      "category": "mind",
+      "minutes": 2
+    }
+  ],
+  "categories": {
+    "all": [
+      "全部",
+      "All"
+    ],
+    "body": [
+      "身体照顾",
+      "Body"
+    ],
+    "mind": [
+      "情绪关怀",
+      "Mind"
+    ],
+    "rest": [
+      "休息睡眠",
+      "Rest"
+    ],
+    "connection": [
+      "与人连接",
+      "Connection"
+    ]
+  },
+  "moods": [
+    {
+      "id": "low",
+      "old": "低落",
+      "name": [
+        "低落",
+        "Low"
+      ],
+      "face": "☂",
+      "reply": [
+        "今天有点难也没关系。不必马上开心，我在这里陪你。",
+        "It’s okay if today feels hard. You don’t have to cheer up right away. I’m here."
+      ]
+    },
+    {
+      "id": "tired",
+      "old": "疲惫",
+      "name": [
+        "疲惫",
+        "Tired"
+      ],
+      "face": "☾",
+      "reply": [
+        "辛苦了。可以放下一点事情，休息也是照顾自己。",
+        "It’s been a lot. You can set a few things down. Rest is care, too."
+      ]
+    },
+    {
+      "id": "calm",
+      "old": "平静",
+      "name": [
+        "平静",
+        "Calm"
+      ],
+      "face": "☁",
+      "reply": [
+        "这样安静的一刻，也值得好好收藏。",
+        "A quiet moment like this is worth keeping."
+      ]
+    },
+    {
+      "id": "happy",
+      "old": "开心",
+      "name": [
+        "开心",
+        "Happy"
+      ],
+      "face": "☀",
+      "reply": [
+        "真好呀。把一点快乐留给今天的自己吧。",
+        "How lovely. Let yourself enjoy this little bright moment."
+      ]
+    },
+    {
+      "id": "mixed",
+      "old": "混乱",
+      "name": [
+        "混乱",
+        "Overwhelmed"
+      ],
+      "face": "〰",
+      "reply": [
+        "不用一次理清全部。我们只做眼前一件小事。",
+        "You don’t have to untangle everything. Let’s take one little thing at a time."
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "glasses",
+      "slot": "eyes",
+      "name": [
+        "圆角黑框眼镜",
+        "Soft-square black glasses"
+      ],
+      "price": 420,
+      "desc": [
+        "圆润四角，保留一点方框的机灵。",
+        "Soft corners, with a hint of a square shape."
+      ]
+    },
+    {
+      "id": "rimless",
+      "slot": "eyes",
+      "name": [
+        "无边眼镜",
+        "Rimless glasses"
+      ],
+      "price": 480,
+      "desc": [
+        "轻轻的镜片，清透的好奇心。",
+        "Light lenses for a curious little mind."
+      ]
+    },
+    {
+      "id": "silver-round",
+      "slot": "eyes",
+      "name": [
+        "银色圆框眼镜",
+        "Silver round glasses"
+      ],
+      "price": 480,
+      "desc": [
+        "细细的银色圆框，装着温柔的好奇心。",
+        "Delicate silver circles for a gentle, curious soul."
+      ]
+    },
+    {
+      "id": "bow",
+      "slot": "head",
+      "name": [
+        "浅蓝蝴蝶结",
+        "Sky-blue bow"
+      ],
+      "price": 420,
+      "desc": [
+        "把今天，打成温柔的结。",
+        "A soft little ribbon for today."
+      ]
+    },
+    {
+      "id": "rosebow",
+      "slot": "head",
+      "name": [
+        "莓粉蝴蝶结",
+        "Berry-pink bow"
+      ],
+      "price": 480,
+      "desc": [
+        "像草莓牛奶一样的小甜蜜。",
+        "A little strawberry-milk sweetness."
+      ]
+    },
+    {
+      "id": "coat",
+      "slot": "clothes",
+      "name": [
+        "小鱼实验白大褂",
+        "Little-fish lab coat"
+      ],
+      "price": 720,
+      "desc": [
+        "带着胸口的小鱼，探索生活。",
+        "A little fish, a curious little scientist."
+      ]
+    },
+    {
+      "id": "knit",
+      "slot": "clothes",
+      "name": [
+        "白色针织衫",
+        "Plain white knit"
+      ],
+      "price": 600,
+      "desc": [
+        "给普通的一天，一点暖意。",
+        "A little warmth for an ordinary day."
+      ]
+    },
+    {
+      "id": "brown-blazer",
+      "slot": "clothes",
+      "name": [
+        "棕色休闲西装外套",
+        "Brown casual blazer"
+      ],
+      "price": 720,
+      "desc": [
+        "柔软的胡桃棕，陪你自在地过一天。",
+        "Soft walnut brown for a day at your own pace."
+      ]
+    },
+    {
+      "id": "black-jacket",
+      "slot": "clothes",
+      "name": [
+        "黑色休闲外套",
+        "Black casual jacket"
+      ],
+      "price": 720,
+      "desc": [
+        "简单的翻领和拉链，舒舒服服做自己。",
+        "A simple collar and zipper. Settle into being you."
+      ]
+    },
+    {
+      "id": "blanket",
+      "slot": "seat",
+      "builtin": true,
+      "name": [
+        "柔软毛毯",
+        "Soft blanket"
+      ],
+      "price": 0,
+      "desc": [
+        "一直都在的安心角落。",
+        "Your cozy corner, always here."
+      ]
+    },
+    {
+      "id": "sofa",
+      "slot": "seat",
+      "name": [
+        "鼠尾草小沙发",
+        "Sage sofa"
+      ],
+      "price": 840,
+      "desc": [
+        "靠一靠，让肩膀休息一下。",
+        "Lean back and let your shoulders rest."
+      ]
+    },
+    {
+      "id": "ring",
+      "slot": "seat",
+      "name": [
+        "游泳圈",
+        "Swim ring"
+      ],
+      "price": 720,
+      "desc": [
+        "给日常添一点轻盈的想象。",
+        "A little floaty daydream for your day."
+      ]
+    },
+    {
+      "id": "sunglasses-square",
+      "slot": "eyes",
+      "name": [
+        "经典黑色墨镜",
+        "Classic black sunglasses"
+      ],
+      "price": 540,
+      "desc": [
+        "给晴天一点酷酷的心情。",
+        "A little cool for a sunny day."
+      ]
+    },
+    {
+      "id": "sunglasses-round",
+      "slot": "eyes",
+      "name": [
+        "茶色圆框墨镜",
+        "Round amber sunglasses"
+      ],
+      "price": 540,
+      "desc": [
+        "透过温暖茶色，看看世界。",
+        "See the world through warm amber."
+      ]
+    },
+    {
+      "id": "strawhat",
+      "slot": "head",
+      "name": [
+        "草帽",
+        "Straw hat"
+      ],
+      "price": 540,
+      "desc": [
+        "把阳光轻轻留在帽檐。",
+        "A little shade for sunny moments."
+      ]
+    },
+    {
+      "id": "headphones",
+      "slot": "head",
+      "name": [
+        "黑色头戴式耳机",
+        "Black over-ear headphones"
+      ],
+      "price": 600,
+      "desc": [
+        "留一首歌的时间给自己。",
+        "A song-sized moment just for you."
+      ]
+    },
+    {
+      "id": "earbuds",
+      "slot": "head",
+      "name": [
+        "白色有线耳机",
+        "White wired earphones"
+      ],
+      "price": 480,
+      "desc": [
+        "把喜欢的声音带在身边。",
+        "Keep a comforting sound close."
+      ]
+    },
+    {
+      "id": "overalls",
+      "slot": "clothes",
+      "name": [
+        "亮绿色背带裤",
+        "Bright green overalls"
+      ],
+      "price": 660,
+      "desc": [
+        "清爽的绿色，轻快的小步。",
+        "Fresh green for little adventures."
+      ]
+    },
+    {
+      "id": "gray-shirt",
+      "slot": "clothes",
+      "name": [
+        "灰衬衫与白短袖",
+        "Gray shirt & white tee"
+      ],
+      "price": 660,
+      "desc": [
+        "舒服地穿好，慢慢过今天。",
+        "Soft layers for an easy day."
+      ]
+    },
+    {
+      "id": "chair",
+      "slot": "seat",
+      "name": [
+        "黑色简约椅",
+        "Minimal black chair"
+      ],
+      "price": 780,
+      "desc": [
+        "给自己留一个安心的位置。",
+        "A quiet seat just for you."
+      ]
+    },
+    {
+      "id": "room",
+      "slot": "background",
+      "name": [
+        "安心小屋",
+        "Cozy room"
+      ],
+      "price": 0,
+      "desc": [
+        "熟悉的小角落，一直都在。",
+        "Your familiar little corner."
+      ],
+      "builtin": true
+    },
+    {
+      "id": "beach",
+      "slot": "background",
+      "name": [
+        "沙滩",
+        "Beach"
+      ],
+      "price": 840,
+      "desc": [
+        "听一听，海边轻轻的风。",
+        "A gentle moment by the sea."
+      ]
+    },
+    {
+      "id": "lab",
+      "slot": "background",
+      "name": [
+        "实验室",
+        "Laboratory"
+      ],
+      "price": 840,
+      "desc": [
+        "带着好奇心，慢慢探索。",
+        "Make room for little discoveries."
+      ]
+    },
+    {
+      "id": "classroom",
+      "slot": "background",
+      "name": [
+        "大学教室",
+        "University classroom"
+      ],
+      "price": 840,
+      "desc": [
+        "学习，也可以按自己的节奏。",
+        "Learning at your own pace."
+      ]
+    },
+    {
+      "id": "cinema",
+      "slot": "background",
+      "name": [
+        "电影院",
+        "Cinema"
+      ],
+      "price": 840,
+      "desc": [
+        "灯光暗下来，留一场温柔的电影时光。",
+        "A soft glow and a little movie moment."
+      ]
+    },
+    {
+      "id": "hoodie",
+      "slot": "clothes",
+      "name": [
+        "深红拉链连帽卫衣",
+        "Burgundy zip hoodie"
+      ],
+      "price": 720,
+      "desc": [
+        "把柔软穿在身上，慢慢来。",
+        "A soft layer for taking it slowly."
+      ]
+    },
+    {
+      "id": "poodle",
+      "slot": "pet",
+      "name": [
+        "棕色泰迪小狗",
+        "Brown toy poodle"
+      ],
+      "price": 780,
+      "desc": [
+        "毛茸茸的小伙伴，坐在身边陪你。",
+        "A curly little friend to sit beside you."
+      ]
+    },
+    {
+      "id": "rabbit",
+      "slot": "pet",
+      "name": [
+        "白色垂耳兔",
+        "White lop rabbit"
+      ],
+      "price": 720,
+      "desc": [
+        "安安静静，也是一种陪伴。",
+        "Quiet company counts, too."
+      ]
+    },
+    {
+      "id": "corgi",
+      "slot": "pet",
+      "name": [
+        "柯基犬",
+        "Corgi"
+      ],
+      "price": 840,
+      "desc": [
+        "短短的小腿，满满的好心情。",
+        "Little legs and a sunny little heart."
+      ]
+    },
+    {
+      "id": "color-black",
+      "slot": "color",
+      "color": "black",
+      "name": [
+        "黑色改色卡",
+        "Black color card"
+      ],
+      "price": 600,
+      "desc": [
+        "使用一次，变成黑色小猪。",
+        "One use changes Piggy to black."
+      ]
+    },
+    {
+      "id": "color-tricolor",
+      "slot": "color",
+      "color": "tricolor",
+      "name": [
+        "三花改色卡",
+        "Tricolor card"
+      ],
+      "price": 720,
+      "desc": [
+        "奶白、棕色和黑色的小花纹。",
+        "Little patches of ivory, brown and black."
+      ]
+    },
+    {
+      "id": "color-brown",
+      "slot": "color",
+      "color": "brown",
+      "name": [
+        "棕色改色卡",
+        "Brown color card"
+      ],
+      "price": 600,
+      "desc": [
+        "使用一次，变成暖棕色小猪。",
+        "One use changes Piggy to warm brown."
+      ]
+    }
+  ],
+  "slots": {
+    "all": [
+      "全部",
+      "All"
+    ],
+    "eyes": [
+      "眼部",
+      "Eyewear"
+    ],
+    "head": [
+      "头饰",
+      "Headwear"
+    ],
+    "clothes": [
+      "服饰",
+      "Clothes"
+    ],
+    "seat": [
+      "坐骑",
+      "Seats"
+    ],
+    "background": [
+      "背景",
+      "Backgrounds"
+    ],
+    "pet": [
+      "宠物",
+      "Pets"
+    ],
+    "color": [
+      "改色卡",
+      "Colors"
+    ]
+  },
+  "skins": {
+    "pink": [
+      "粉色",
+      "Pink"
+    ],
+    "black": [
+      "黑色",
+      "Black"
+    ],
+    "tricolor": [
+      "三花",
+      "Tricolor"
+    ],
+    "brown": [
+      "棕色",
+      "Brown"
+    ]
+  }
+}
